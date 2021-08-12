@@ -1,0 +1,7 @@
+bind_addr = ":8080"
+log_level = "debug"
+
+[store]
+database_url = "mongodb://localhost:27017"
+database_name = "test_db"
+collection_name = "users"
