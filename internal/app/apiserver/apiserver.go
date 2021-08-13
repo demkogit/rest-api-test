@@ -126,7 +126,7 @@ var tokenEncodeString = "dasdqwr12rq1!23%%dd"
 
 func generateAccessToken() (string, error) {
 	token := jwt.NewWithClaims(
-		jwt.SigningMethodHS256,
+		jwt.SigningMethodHS512,
 		jwt.StandardClaims{
 			ExpiresAt: jwt.TimeFunc().Add(600000).Unix(),
 			IssuedAt:  jwt.TimeFunc().Unix(),
